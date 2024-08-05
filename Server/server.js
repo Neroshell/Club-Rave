@@ -1,8 +1,10 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000;
 const path = require('path');
 const nodemailer = require('nodemailer');
+
 
 // Middleware to parse JSON and URL-encoded data
 app.use(express.json());
@@ -12,8 +14,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
 // Email configuration
-const emailUser = 'dummywithnero@gmail.com';
-const emailPass = 'krox wmba ilzk ugmo';
+const emailUser = process.env.EMAIL_USER;
+const emailPass = process.env.EMAIL_PASS;
 
 let transporter = nodemailer.createTransport({
   service: 'gmail',
