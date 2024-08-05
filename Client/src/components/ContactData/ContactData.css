@@ -1,0 +1,117 @@
+.contact-data{
+    width: 100%;
+    padding-bottom: 70px;
+    
+    
+}
+
+.form-main{
+    width: 80%;
+    padding: 50px 30px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+   
+    
+}
+
+.form-main Button{  
+   margin: 0px auto;
+}
+
+.form-group .form-control{
+    height: 65px;
+}
+
+.error{
+    color: red;
+}
+
+.form-group .text-area{
+    height: 150px;
+}
+
+.form-main h1{
+
+    color: var(--primary-color);
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.form-info{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.form-info-content{
+    width: 90%;
+}
+
+.form-info-content h1{
+    font-weight: bolder;
+    color: var(--primary-color);
+    font-size: 40px;
+}
+
+.form-info-content p{
+    color: var(--paragraph);
+    padding: 10px;
+}
+
+.form-info-content p::before {
+    content: '•'; /* Unicode bullet character */
+    color: var(--secondary-color);
+    position: absolute; /* Set position to absolute */
+    left: 10px; 
+   font-weight: 900;
+
+}
+
+@media (min-width: 767px) and (max-width: 1024px){
+
+    .form-info{
+        flex-direction: column;
+      }
+
+      
+      
+}
+
+@media (min-width: 1025px) {
+
+    .form-main{
+        width: 40%;
+       
+        
+
+        
+    }
+
+   
+    
+.form-info{
+  flex-direction: row;
+ 
+}
+
+.form-info-content{
+    width: 40%;
+   
+  
+}
+.form-info-content p::before{
+    left: 160px;
+}
+
+.contact-data{
+    padding-bottom: 70px;
+}
+
+}

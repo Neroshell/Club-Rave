@@ -1,0 +1,59 @@
+.button-33 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #EC53B0 ;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+ 
+}
+
+.button-33:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #FFE5E5;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: auto;
+  left: auto;
+}
+
+.button-33:hover::after {
+  right: auto;
+  left: auto;
+  width: 100%;
+}
+
+.button-33 span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+ padding: 10px 15px;
+  color: #fff;
+  letter-spacing: 0.2em;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-33:hover span {
+  color:  rgb(49, 25, 107);
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,157 @@
+
+.events{
+  margin-top: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #FFE5E5;
+  
+}
+
+.event-headings h3{
+
+  font-size: 100px;
+  position: relative;
+  color: var(--tertiary-color);
+  text-shadow: rgba(0, 0, 0, 0.1) 9px 9px 9px;
+  
+}
+
+.event-headings h4{
+  position: relative;
+  bottom: 85px;
+  font-size: 35px
+  
+}
+
+
+
+.carousel-container {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+   
+    
+  }
+
+  .swiper-slide{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  
+
+  .carousel-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+  }
+
+  .upcoming-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .upcoming-data{
+    font-weight: bold;
+    color: var(--paragraph);
+    position: relative;
+    bottom: 49px;
+    
+  }
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  color:  #EC53B0 !important ; 
+}
+
+
+
+.swiper-pagination-bullet {
+  background-color:  #EC53B0  !important; /* Change the background color of pagination bullets */
+  width: 10px; /* Adjust the width of pagination bullets */
+ /* Adjust the height of pagination bullets */
+   /* Adjust the margin between pagination bullets */
+  border-radius: 50%; /* Make pagination bullets round */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FFE5E5 ; /* Change the background color of active pagination bullet */
+}
+
+
+@media (min-width: 767px) and (max-width: 1024px){
+  .events{
+      margin-top: 93vh;
+      padding-top: 90px;
+  }
+}
+
+
+
+@media (min-width: 1025px) {
+
+    .events{
+       
+        padding-top: 90px;
+        margin-top: 75vh;
+        
+       
+    }
+
+ .carousel-container {
+   
+        width: 90%;
+      
+        margin: 0 auto;
+        
+       
+        
+      }
+
+     
+      .carousel-image{
+         width: 100%;
+        height: 100%;
+        object-fit: cover;
+       
+        border-radius: 0px;
+       
+      }
+
+      .events h3{
+
+          font-size: 165px;
+          letter-spacing: 5px;
+      
+      }
+      .events h4{
+        position: relative;
+        bottom: 120px;
+        font-size: 50px
+        
+      }
+      
+     
+      
+      .upcoming-data{
+        position: relative;
+        bottom: 100px;
+      }
+      
+      
+     
+
+
+  }
+
+   
+    
+    
+      
+     

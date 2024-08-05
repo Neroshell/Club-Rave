@@ -1,0 +1,27 @@
+
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --primary-color: rgb(49, 25, 107);
+  --secondary-color: #EC53B0  ;
+  --tertiary-color: #FFE5E5;
+  --paragraph: rgb(80, 100, 130);
+  
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+ 
+}
+
+

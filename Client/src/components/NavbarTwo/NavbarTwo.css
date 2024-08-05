@@ -1,0 +1,104 @@
+/* Navbar CSS */
+.navbar-two {
+  width: 100%;
+  top: 0;
+  left: 0;
+  gap: 7px;
+  z-index: 1000;
+  background-color: rgb(49, 25, 107);
+
+}
+
+
+
+.nav-logo {
+  width: 15%;
+  margin-left: 10px;
+}
+
+
+
+.nav-link {
+  position: relative; /* Ensure relative positioning */
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 13px;
+  color: var(--tertiary-color); /* Custom text color */
+  
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .nav-logo{
+      width: 18%;
+  } 
+
+  .nav-toggle{
+    
+    font-size: 30px;
+      
+  }
+  .navbar-two{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    gap: 120px;
+    background-color: rgb(49, 25, 107);
+    height: auto;
+    position: fixed;
+  }
+ 
+}
+
+
+/* Media query for larger screens */
+@media (min-width: 1025px) {
+  .navbar-two {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    gap: 7px;
+    background-color: rgb(49, 25, 107);
+    height: 100px;
+    position: fixed;
+    
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 10px; /* Adjust the thickness of the underline */
+    width: 100%; /* Underline width */
+    height: 2px; /* Underline height */
+    background-color: var(--secondary-color); 
+    opacity: 0;/* Color of the underline */
+    transition: width 0.1s ease ; /* Transition effect for smoothness */
+    
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    transform: scaleX(1); /* Scale the underline to show it */
+    opacity: 1;
+    transition:  0.5s ease 
+  }
+
+  .nav-logo {
+    margin-left: 40px;
+   
+  }
+
+  .inButton{
+    margin-left: 60px;
+  }
+  
+}

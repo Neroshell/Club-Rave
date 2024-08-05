@@ -1,0 +1,54 @@
+.bottle-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE5E5;
+    flex-wrap: wrap;
+    gap: 0px;
+   
+    
+}
+
+.bottle-data li{
+    color: rgb(80, 100, 130);
+}
+
+.bottle-data-p{
+    color: rgb(80, 100, 130);
+    font-style: oblique;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+
+
+    .bottle-data-p{
+        width: 30%;
+        margin: 20px auto;
+        text-align: center;
+        width: 50%;
+    }
+
+
+}
+  
+@media (min-width: 1025px) {
+    .bottle-data{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .bottle-data-p{
+        width: 30%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+}

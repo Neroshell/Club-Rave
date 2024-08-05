@@ -1,0 +1,77 @@
+.birthday-data{
+    background-color: #FFE5E5;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+}
+
+.birthday-data-content{
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    padding: 50px 20px 20px 20px;
+    
+}
+
+.birthday-data-content h2, h4{
+    color: var(--primary-color);
+    font-weight: bolder;
+  
+}
+
+.birthday-data-content h4{
+    margin-top: 50px;
+}
+
+
+
+.birthday-data-content p{
+    color: var(--paragraph);
+   margin: 0;
+   padding: 3px;
+}
+
+.birthday-data p::before {
+    content: '•'; /* Unicode bullet character */
+    color: var(--secondary-color);
+    position: absolute; /* Set position to absolute */
+    left: 25px; 
+   font-weight: 900;
+
+}
+
+
+@media (min-width: 767px) and (max-width: 1024px){
+    .birthday-data-content{
+        margin-top: 50px;
+    }
+    
+    .birthday-data p::before {
+   
+        left: 45px; 
+     
+    
+    }
+   
+  }
+  
+   
+  
+@media (min-width: 1025px) {
+    .birthday-data-content{
+        margin-top: 50px;
+    }
+
+   
+    .birthday-data p::before {
+        content: '•'; /* Unicode bullet character */
+        color: var(--secondary-color);
+        position: absolute; /* Set position to absolute */
+        left: 70px; 
+       font-weight: 900;
+    
+    }
+   
+  }
