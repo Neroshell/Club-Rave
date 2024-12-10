@@ -36,7 +36,7 @@ const MyModal = ({ show, onHide }) => {
 
   const handleSubmit = async (values, { setSubmitting }) => {
     try {
-      const response = await axios.post('http://localhost:5000/', values);
+      const response = await axios.post('/', values);
       if (response.status === 200) {
         setEmailSent(true);
       }

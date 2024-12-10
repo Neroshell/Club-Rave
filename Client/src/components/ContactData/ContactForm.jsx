@@ -31,7 +31,7 @@ const ContactForm = () => {
 
   const handleSubmit = async (values, { setSubmitting }) => {
     try {
-      const response = await axios.post('http://localhost:5000/contact', values);
+      const response = await axios.post('/contact', values);
       if (response.status === 200) {
         setEmailSent(true);
       }
