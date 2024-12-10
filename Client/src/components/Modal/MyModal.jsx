@@ -59,7 +59,7 @@ const MyModal = ({ show, onHide }) => {
       <Modal show={show} onHide={onHide} >
         <Modal.Body className='modal-body modal-reserve'>
           <CheckCircleIcon fontSize="large" sx={{color: 'rgb(49, 25, 107)', fontSize: "80px"}}/>
-          <h4>Thank You for your reservation! You will receive a confirmation email shortly </h4>
+          <h4>Thank You reserving a place! You will receive a confirmation email shortly </h4>
          
           <Button name='Close' onClick={handleClose} />
         </Modal.Body>
